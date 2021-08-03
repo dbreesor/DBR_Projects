@@ -1,0 +1,11 @@
+#! /usr/bin/python3
+
+sentence = input("Enter your sentence: ")
+
+print(sentence[0], sentence[1])
+
+var = chr(ord(sentence[0]) + 1)
+var1 = chr(ord(sentence[1]) + 1)
+
+print(var, var1)
+
