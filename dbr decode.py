@@ -13,3 +13,5 @@ for i in range(len(sentence)):
     replaced = re.sub("!", repl_fun, code)
     replaced1 = re.sub("{", repl_fun, replaced)
     print (replaced1, end=" ")
+
+    # test
