@@ -3,15 +3,13 @@
 # import re
 # import random
 
-def repl_fun(match):
-    return str(random.randint(0,9))
+# def repl_fun(match):
+#    return str(random.randint(0,9))
 
-sentence = input("Enter your sentence: ")
+code = input("Enter the coded message: ")
 
-for i in range(len(sentence)):
-    code=str(chr(ord(sentence[i]) + 1))
+for i in range(len(code)):
+    code=str(chr(ord(code[i]) - 1))
     replaced = re.sub("!", repl_fun, code)
     replaced1 = re.sub("{", repl_fun, replaced)
     print (replaced1, end=" ")
-
-    # test
